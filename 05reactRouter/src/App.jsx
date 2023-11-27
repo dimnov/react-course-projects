@@ -1,7 +1,21 @@
+import { Route, Routes } from "react-router-dom";
+
+import Footer from "./components/Footer.jsx";
+import Header from "./components/Header.jsx";
+import Home from "./components/Home.jsx";
+import About from "./components/About/About.jsx";
+import Contact from "./components/Contact.jsx";
+
 function App() {
   return (
     <>
-      <h1 className="bg-green-300">React router dom</h1>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contact />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
