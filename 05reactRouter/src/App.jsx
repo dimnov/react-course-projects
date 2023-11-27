@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 
-import Footer from "./components/Footer.jsx";
-import Header from "./components/Header.jsx";
-import Home from "./components/Home.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Header from "./components/Header/Header.jsx";
+import Home from "./components/Home/Home.jsx";
 import About from "./components/About/About.jsx";
-import Contact from "./components/Contact.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 
 function App() {
   return (
