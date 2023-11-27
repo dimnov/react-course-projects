@@ -6,7 +6,7 @@ export default function InputBox({
   onAmountChange,
   onCurrencyChange,
   currencyOptions = [],
-  selectedCurrency = "usd",
+  selectedCurrency,
   amountDisabled = false,
   currencyDisabled = false,
   className = "",
@@ -25,7 +25,7 @@ export default function InputBox({
           className="outline-none w-full bg-transparent py-1.5"
           placeholder="Amount"
           disabled={amountDisabled}
-          value={amount}
+          value={amount == 0 ? "Amount" : amount}
           onChange={(e) => {
             onAmountChange ? onAmountChange(Number(e.target.value)) : null;
           }}
